@@ -27,12 +27,12 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import unittest
-from functions.superfunction import *
+from functions.superFunction import *
 
 class TestSuperFunction(unittest.TestCase):
 
     def test_novalue(self):
-        self.assertEqual(SuperFunction, 70 )
+        self.assertEqual(SuperFunction(), 70 )
 
 
 def suite():
